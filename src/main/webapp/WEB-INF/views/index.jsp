@@ -31,7 +31,7 @@ body {
 </head>
 <body>
 	<div class="container">
-		<div class="row m-1">
+		<div class="row m-3">
 			<div class="input-group col-sm-12">
 				<input id = "findAddr" onclick="findAddr()" type="text" class="form-control"
 					placeholder="주소를 입력해주세요.">
@@ -43,19 +43,19 @@ body {
 		</div>
 	</div>
 	<div class="row m-3">
-		<div class="col-sm-6">
+		<div class="col-sm-8 col-8">
 				<div id="map" style="width: 100%; height: 100%;"></div>
-			</div>
-		<div class="col-sm-6 ">
-			<div class="bg-light col-12 p-2">
+		</div>
+		<div class="col-sm-4 col-4">
+			<div class="bg-light m-2">
 				<form>
-					<h3>판매처 정보</h3>
+					<h3 class="m-3">판매처 정보</h3>
 					<div class="form-group m-5">
-						<i class="fas fa-first-aid">&nbsp판매처 : </i><label id="content"></label><br/>
-						<i class="fas fa-map-marker-alt">&nbsp주 소 : </i><label id="addr"></label><br/>
-						<i class="fas fa-people-carry">&nbsp재고 상태 : </i><label id="state"></label><br/>
-						<i class="fas fa-clock">&nbsp데이터 생성 일자 : </i><label id="created_at"></label><br/>
-						<i class="fas fa-clock">&nbsp입고 예정 시간 : </i><label id="stock_at"></label><br/>
+						<i class="fas fa-first-aid">&nbsp판매처 : &nbsp</i><label id="content"></label><br/>
+						<i class="fas fa-map-marker-alt">&nbsp주 소 : &nbsp</i><label id="addr"></label><br/>
+						<i class="fas fa-people-carry">&nbsp재고 상태 : &nbsp</i><label id="state"></label><br/>
+						<i class="fas fa-clock">&nbsp확인 시간 : &nbsp</i><label id="created_at"></label><br/>
+						<i class="fas fa-clock">&nbsp입고 예정 시간 : &nbsp</i><label id="stock_at"></label><br/>
 					</div>
 				</form>
 			</div>
@@ -65,7 +65,7 @@ body {
 			
 			<div class="bg-light col-12 p-2">
 				<form>
-					<h3>마스크 5부제 Q&A</h3>
+					<h3 class="m-3">마스크 5부제 Q&A</h3>
 					<br />
 					<div class="form-group p-5">
 						<i class="fas fa-comment-dots"></i><label>무슨 요일에 구매할 수 있을까?</label><br/>

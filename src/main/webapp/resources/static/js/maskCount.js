@@ -82,24 +82,24 @@
     		}).done(function(r) {
     			// * 마커 이미지 생성 시작
     			var greenSrc = 'https://cdn2.iconfinder.com/data/icons/colored-flags/154/green-flag-512.png',
-   				imageSize = new kakao.maps.Size(34, 39), 
-       		    imageOption = {offset: new kakao.maps.Point(27, 69)};
+   				imageSize = new kakao.maps.Size(20, 20), 
+       		    imageOption = {offset: new kakao.maps.Point(5, 5)};
     
     			var yellowSrc ='https://cdn2.iconfinder.com/data/icons/colored-flags/154/yellow-flag-512.png',
-   				imageSize = new kakao.maps.Size(34, 39),
-       		    imageOption = {offset: new kakao.maps.Point(27, 69)};
+   				imageSize = new kakao.maps.Size(20,20),
+       		    imageOption = {offset: new kakao.maps.Point(5, 5)};
   
     			var graySrc = 'https://cdn2.iconfinder.com/data/icons/colored-flags/154/black-flag-512.png',
-   				imageSize = new kakao.maps.Size(34, 39), 
-       		    imageOption = {offset: new kakao.maps.Point(27, 69)}; 
+   				imageSize = new kakao.maps.Size(20, 20),
+       		    imageOption = {offset: new kakao.maps.Point(5, 5)}; 
        		    
     			var redSrc = 'https://cdn2.iconfinder.com/data/icons/colored-flags/154/red-flag-512.png', 
-    		    imageSize = new kakao.maps.Size(34, 39), 
-    		    imageOption = {offset: new kakao.maps.Point(27, 69)}; 
+    		    imageSize = new kakao.maps.Size(20, 20), 
+    		    imageOption = {offset: new kakao.maps.Point(5,5)}; 
     		    
 	   		    var xSrc='https://cdn0.iconfinder.com/data/icons/web/512/e52-512.png',
-   		    	imageSize = new kakao.maps.Size(35, 35), 
-       		    imageOption = {offset: new kakao.maps.Point(27, 69)};
+   		    	imageSize = new kakao.maps.Size(20, 20), 
+       		    imageOption = {offset: new kakao.maps.Point(5,5)};
 	       		   
     		    var markergreenSrc = new kakao.maps.MarkerImage(greenSrc, imageSize, imageOption);
     		    var markeryellowSrc = new kakao.maps.MarkerImage(yellowSrc, imageSize, imageOption);
@@ -253,7 +253,7 @@
     				var remain_stat = emptys[i].remain_stat;
     				var created_at = emptys[i].created_at;
     				var stock_at = emptys[i].stock_at;
-    				var state='1개 이하';
+    				var state='재고 없음';
 
     				var marker = new kakao.maps.Marker({
     					map : map, 
